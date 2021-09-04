@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Anime Quotes</title>
+    <style>
+        h4{
+            display: inline;
+        }
+        #spinner{
+            display: none;
+        }
+        .color{
+            color: white;
+            background-color: rgba(255, 192, 203, 0.507);
+            border: 2px solid wheat ;
+            border-radius: 15px;
+            margin: 10px;
+            padding: 10px;
+           
+        }
+        p{
+            color: aliceblue;
+        }
+        a{
+            text-decoration: none;
+            font-size: large;
+            font-weight: bold;
+            color: rgb(241, 241, 241);
+        }
+    </style>
+</head>
+<body class="bg-dark">
+    <h1 class="bg-white p-4 text-center border border-3"> Anime Quotes To Make Your Day Special</h1>
+
+   
+    <!-- search box -->
+    <div class="text-center color">
+        <a target="blank" href="animeQuotes.html">Click Me For Random Anime Quotes</a>
+    </div>
+ <div class="input-group mb-3 w-50 mx-auto">
+    <input id="search-field" type="text" class="form-control" placeholder="Search Anime Character Name" aria-label="Search Anime Character Name" aria-describedby="button-addon2">
+    <button onclick="pressSearch()" class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+  </div>
+ <!-- end search box -->
+   <div id="spinner" class="text-center">
+    <button class="btn btn-dark" type="button" disabled>
+        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+        Loading...
+      </button>
+   </div>
+   <div id="create-element">
+    <p id="quote" class="text-white"></p>
+    <p id="quote-1" class="text-white"></p>
+    <p id="quote-2" class="text-white"></p>
+   </div>
+   <p class="color"></p>
+    <script src="app2.js"></script>
+</body>
+</html>
